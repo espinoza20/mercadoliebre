@@ -120,63 +120,94 @@ button{
 }
 /*FIN HEADER*/
 
-/* MAIN */
-main{
-    width: 90vw;
-    margin: auto;
-}
-
-.product-content{
+/** PRODUCTOS */
+main H3{
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
-    background-color: var(--blanco);
 }
 
-.product {
-    margin: 10px 0;
-    background-color: white;
-    cursor: pointer;
-  }
-  
-  .product .product-content {
-    /* position: relative; */
-    /* padding: 15px; */
-    border-top: solid #ebebeb 1px; 
+.last-visit, .offers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.last-visit .products{
+    width: 95%;
+}
+
+.products article{
+    background: var(--blanco);
+    padding: 10px 0;
+}
+
+.products article i{
+    color: var(--verde);
+    border: 1px solid var(--verde);
+    background: var(--blanco);
+    border-radius: 50%;
+    padding: 8px;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+}
+
+.main-article{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-  }
- 
-.visita{
-    font-size: 24px;
-    text-align: center;
+    position: relative;
+    padding: 10px;
+    border-top: 1px solid var(--grisClaro);
 }
 
-h3{
-    font-size: 24px;
-    text-align: center;
-}
-
-#price{
+.price{
     font-size: 18px;
+    width: 30%;
 }
 
-#articule{
+.discount{
+   
+    width: 70%;
+    color: var(--verde);
+}
+
+.discount, .description{
     font-size: 16px;
+    font-weight: normal;
 }
 
-#discount{
-    font-size: 16px;
-    color:var(--verde);
+h3, .description{
+    color: var(--grisOscuro);
 }
 
-/* FIN DEL MAIN */
+article{
+    margin-bottom: 15px;
+}
+
+.offers .products{
+    width: 95%;
+}
+
+main section div.products article i{
+    transition: transform 1s;
+
+}
+
+main section div.products article:hover i{
+    transform: rotate(-90deg);
+
+}
+
 
 /* FOOTER */
 footer{
     text-align: center;
     margin-top: 8px;
 }
-/* .texto{
+/* .texto{  
     text-align: center;
 } */
 .text{
